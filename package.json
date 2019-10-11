@@ -1,0 +1,23 @@
+{
+  "name": "wedamann",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "start": "node src/app.js",
+    "dev": "env-cmd ./config/dev.env nodemon src/app.js -e js,hbs"
+  },
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "express": "^4.17.1",
+    "hbs": "^4.0.5",
+    "moment": "^2.24.0",
+    "moment-timezone": "^0.5.26",
+    "request": "^2.88.0"
+  },
+  "devDependencies": {
+    "env-cmd": "^8.0.2",
+    "nodemon": "^1.19.3"
+  }
+}
