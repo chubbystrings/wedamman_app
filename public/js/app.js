@@ -1,4 +1,4 @@
-console.log('client side javascript is loaded')
+
 
 //DOM selection
 const autoWeather = document.querySelector('#autoWeather');
