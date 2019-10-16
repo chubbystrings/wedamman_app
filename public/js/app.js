@@ -36,20 +36,19 @@ const MonthOfTheYear = {
 //function for digital clock ticking with setIterval
 const ticking = () => { 
     let newTime = new Date().toLocaleTimeString()
-  
     return newTime
 }
 
 //function to get easy readable date 
 const convertDate = () => {
     let dayOfTheWeek = new Date().toString()
-    dayOfTheWeek = dayOfTheWeek.split(' ')[0]
-    let newDate = new Date().toLocaleDateString();
-    let month = newDate.split('/')[0]
-    let day = newDate.split('/')[1]
-    let year = newDate.split('/')[2]
+    console.log(dayOfTheWeek)
+    let day = dayOfTheWeek.split(' ')[0]
+    let month = dayOfTheWeek.split(' ')[1]
+    let dayDate = dayOfTheWeek.split(' ')[2]
+    let year = dayOfTheWeek.split(' ')[3]
 
-    return `${dayOfTheWeek} ${day} ${MonthOfTheYear[month]}, ${year}`
+    return `${day} ${month} ${dayDate}, ${year}`
 
 }
 

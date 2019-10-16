@@ -368,7 +368,8 @@ input::placeholder {
   #formatedDate {
     color: rgb(34, 31, 31);
     margin-bottom: 2rem;
-    font-family: 'Courier New'
+    font-family: 'Courier New';
+    font-weight: bolder;
   }
 
  
