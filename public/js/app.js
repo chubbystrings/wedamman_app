@@ -34,15 +34,19 @@ const MonthOfTheYear = {
 }
 
 //function for digital clock ticking with setIterval
+let amPm
 const ticking = () => { 
-    let newTime = new Date().toLocaleTimeString()
-    return newTime
+    let newTime = new Date().toTimeString()
+    newTime = newTime.split(' ')[0]
+    amPm = newTime.split(':')[0];
+    amPm = amPm < 12 ? "AM" : "PM"
+    return `${newTime} ${amPm}`
 }
 
 //function to get easy readable date 
 const convertDate = () => {
-    let dayOfTheWeek = new Date().toString()
-    console.log(dayOfTheWeek)
+    let dayOfTheWeek = new Date().toString();
+    // console.log(dayOfTheWeek)
     let day = dayOfTheWeek.split(' ')[0]
     let month = dayOfTheWeek.split(' ')[1]
     let dayDate = dayOfTheWeek.split(' ')[2]
