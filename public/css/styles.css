@@ -20,23 +20,17 @@
     color: white;
 }
 
-h1,
-h2,
-h3,
-h4 {
-    margin-bottom: 1rem;
-}
 
 h1 {
     font-size: 5.4rem;
-    margin-bottom: 5rem;
+    margin-bottom: 0.5rem;
     text-align: center;
 }
 
 
 h2 {
     font-size: 4.2rem;
-    margin-bottom: 4rem;
+    margin-bottom: 0.5rem;
     font-weight: 700;
     text-align: center;
     color: white
@@ -46,7 +40,7 @@ h2 {
 h3 {
     font-size: 2.8rem;
     font-weight: 500;
-    margin-bottom: 4rem;
+    margin-bottom: 0.5rem;
     text-align: center;
     color: white
     
@@ -55,7 +49,7 @@ h3 {
 h4 {
     font-size: 2.2rem;
     font-weight: 300;
-    margin-bottom: 4rem;
+    margin-bottom: 0.5rem;
     text-align: center;
     color: white
     
@@ -64,7 +58,7 @@ h4 {
 h5 {
   font-size: 1.5rem;
   font-weight: 300;
-  margin-bottom: 4rem;
+  margin-bottom: 0.5rem;
   text-align: center;
   color: white
   
@@ -171,6 +165,7 @@ a {
 #inputError {
   color: red;
   margin-bottom: 1rem;
+  font-size: 1.5rem;
 }
 .search-div:hover > .search-btn {
   background: white;
@@ -365,6 +360,16 @@ input::placeholder {
     }
   }
 
+  #clock {
+    font-size: 3rem;
+    color: rgb(34, 31, 31);
+    font-family: 'Courier New';
+  }
+  #formatedDate {
+    color: rgb(34, 31, 31);
+    margin-bottom: 2rem;
+    font-family: 'Courier New'
+  }
 
  
   

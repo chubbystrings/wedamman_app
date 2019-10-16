@@ -6,6 +6,7 @@
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
 
     <link rel="stylesheet" href="/css/styles.css">
+    <link rel="icon" href="/img/favicon.ico" type="image/x-icon">
     <script defer src="https://friconix.com/cdn/friconix.js"></script>
 
     <title>Wedamann App</title>
@@ -16,11 +17,12 @@
         <div  class="flex-column flex-center  Cockpit">
             <img id="wedamannLogo" src="/img/wedaman-logo.png">
             <h3 id="header"> {{title}} </h3>
+            <p id="clock"></p>
+            <p id="formatedDate"></p>
             <h5 id="intro">Get the latest weather forecast for your location, click the button</h5>
                 <button class="" id="autoWeather">Forecast for My Location</button>
                     <p id="inputError"></p>
                     <div id="searchDiv" class="search-div">
-                        
                         <input id="searchLocation"  type="search" placeholder="Type any location">
                         <a  id="btnSearch"><i class="fi-xnsuhl-search fi-size-xl search-btn"></i></a>    
                     </div> 
@@ -29,7 +31,7 @@
                 <div id="messageOne"></div>
                 <div id="errorMsg"></div>
                 <h4 id="messageTwo"></h4>
-                <a style="visibility: hidden;" id="home" class="btn" href="/">Go Back</a>
+                <a style="display: none;" id="home" class="btn" href="/">Go Back</a>
 
                 {{>footer}}
         </div>
