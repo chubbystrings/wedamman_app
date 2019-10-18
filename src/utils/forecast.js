@@ -4,7 +4,7 @@ const moment = require('moment-timezone')
 
 const forecast = (latitude, longitude, callback) => {
 
-    const url = 'https://api.darksky.net/forecast/e668afb848121ffd5937b3968f8347f1/'+ latitude + ',' + longitude +'?units=si'
+    const url = 'https://api.darksky.net/forecast/' + process.env.DARKSKY_KEY +'/'+ latitude + ',' + longitude +'?units=si'
 
 
     request({url, json: true}, (error, { body }) =>{
