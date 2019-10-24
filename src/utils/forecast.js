@@ -19,7 +19,7 @@ const forecast = (latitude, longitude, callback) => {
         }else{
                 
                 const time = moment().tz(body.timezone).format("hh:mma")
-               callback(undefined, ` The current time  is ${time}, In summary for this week  ${body.daily.summary}, For now expect 
+               callback(undefined, `${body.currently.icon} at the moment and the time is ${time}, In summary for this week  ${body.daily.summary}, For now expect 
                ${body.hourly.summary} The current temperature is ${body.currently.temperature}C` )
         }
     })

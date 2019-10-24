@@ -9,8 +9,6 @@
     
 }
 
-
-
 * { font-family: Courier !important;}
 
 *{
@@ -266,12 +264,9 @@ input::placeholder {
   }
   
 
-  #messageOne{
-      margin-top: 4rem;
-      
-  }
+  
   #messageTwo {
-      margin-bottom: 4rem;
+      margin-bottom: 1.5rem;
       font-size: 1.5rem;
       line-height: 2.5rem;
       text-align: center;
@@ -373,12 +368,12 @@ input::placeholder {
   #clock {
     font-size: 4rem;
     color: rgb(34, 31, 31);
-    font-family: 'Courier New';
+    font-family: 'Tahoma' !important;
   }
   #formatedDate {
     color: rgb(34, 31, 31);
     margin-bottom: 2rem;
-    font-family: 'Courier New';
+    font-family: 'Tahoma' !important;
     font-weight: bolder;
   }
 

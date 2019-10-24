@@ -1,6 +1,7 @@
 
 
 //DOM selection
+const root = document.getElementById(':root');
 const autoWeather = document.querySelector('#autoWeather');
 const messageOne = document.getElementById('messageOne');
 const messageTwo = document.getElementById('messageTwo');
@@ -161,6 +162,24 @@ const displayForecast = (weather) => {
     messageOne.innerText = ''
     weather.location? messageTwo.innerText =` In ${weather.location} ${weather.forecast}` : messageTwo.innerText = weather.forecast;
     home.style.display = "inline"
+    const icon = weather.forecast.split(' ')[0];
+    console.log(icon)
+    if(icon){
+        if(icon === 'cloudy' || icon === 'partly-cloudy-day'){
+            document.body.style.background = "url('/img/cloudy.jpg')"
+        }
+        if(icon === 'rain'){
+            document.body.style.background = "url('/img/rainy.jpg')"
+        }
+        if(icon === 'clear-day'){
+            document.body.style.background = "url('/img/sunshine2.jpeg')"
+            messageOne.style.color = 'black'
+            messageTwo.style.color = "black"
+        }
+        if(icon === 'partly-cloudy-night'){
+            document.body.style.background = "url('/img/cloudy-night.jpg')"
+        }
+    }
 }
 
 
