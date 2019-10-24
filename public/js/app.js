@@ -163,21 +163,36 @@ const displayForecast = (weather) => {
     weather.location? messageTwo.innerText =` In ${weather.location} ${weather.forecast}` : messageTwo.innerText = weather.forecast;
     home.style.display = "inline"
     const icon = weather.forecast.split(' ')[0];
-    console.log(icon)
+    // console.log(icon)
     if(icon){
         if(icon === 'cloudy' || icon === 'partly-cloudy-day'){
+            document.body.style.backgroundSize = 'cover'
+            document.body.style.backgroundPosition = 'top'
+            document.body.style.backgroundRepeat = 'repeat-y'
             document.body.style.background = "url('/img/cloudy.jpg')"
         }
         if(icon === 'rain'){
             document.body.style.background = "url('/img/rainy.jpg')"
+            document.body.style.backgroundSize = 'cover'
+            document.body.style.backgroundPosition = 'bottom'
+            document.body.style.backgroundRepeat = 'repeat-y'
         }
         if(icon === 'clear-day'){
+            
             document.body.style.background = "url('/img/sunshine2.jpeg')"
             messageOne.style.color = 'black'
             messageTwo.style.color = "black"
+            document.body.style.backgroundSize = 'cover'
+            document.body.style.backgroundPosition = 'top'
+            document.body.style.backgroundRepeat = 'repeat-y'
         }
-        if(icon === 'partly-cloudy-night'){
+        if(icon === 'partly-cloudy-night' || icon === "clear-night"){
+            clock.style.color = 'white'
+            formatedDate.style.color = 'white'
             document.body.style.background = "url('/img/cloudy-night.jpg')"
+            document.body.style.backgroundSize = 'cover'
+            document.body.style.backgroundPosition = 'top'
+            document.body.style.backgroundRepeat = 'repeat-y'
         }
     }
 }
