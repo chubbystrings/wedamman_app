@@ -154,14 +154,14 @@ const hideElements = () => {
 
 //function to display forecast data on DOM element
 const displayForecast = (weather) => {
+
+
     
     // console.log(weather)
     header.style.display = "none"
     intro.style.display = "none"
     IdsRoller.style.display = 'none'
     messageOne.innerText = ''
-    weather.location? messageTwo.innerText =` In ${weather.location} ${weather.forecast}` : messageTwo.innerText = weather.forecast;
-    home.style.display = "inline"
     const icon = weather.forecast.split(' ')[0];
     // console.log(icon)
     if(icon){
@@ -195,6 +195,9 @@ const displayForecast = (weather) => {
             document.body.style.backgroundRepeat = 'repeat-y'
         }
     }
+    weather.location? messageTwo.innerText =` In ${weather.location} ${weather.forecast}` : messageTwo.innerText = weather.forecast;
+    home.style.display = "inline"
+   
 }
 
 
